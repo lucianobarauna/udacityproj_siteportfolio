@@ -7,7 +7,3 @@ Desenvolver um site portfólio seguindo o mockup e os exigências para aprovaç�
 ## Tecnologias
 - Html
 - Css
-
-
-​
-7
