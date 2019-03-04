@@ -99,7 +99,11 @@
     color: #7d97ad;
   }
 
-  .works-row .works-box:first-child {
+  .works-list {
+    list-style: none;
+  }
+
+  .works-list .works-box:first-child {
     padding-top: 0;
   }
 
@@ -166,7 +170,7 @@
       font-size: 1.6rem;
     }
 
-    .works-row {
+    .works-list {
       display: flex;
       justify-content: space-between;
     }
@@ -175,6 +179,11 @@
       padding-top: 0;
       width: 30%;
     }
+
+    .works-box-title {
+      font-size: 2.8rem;
+    }
+
   }
 
 
