@@ -7,6 +7,11 @@
     <title>Site portfólio - Luciano Baraúna</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet" />
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/picturefill@3.0.3/dist/picturefill.min.js"></script>
 </head>
 <body>
     <main>
@@ -23,65 +28,77 @@
             <!-- / header info -->
           </header>
           <!-- / header -->
-
           <!-- banner -->
           <section class="banner">
             <a href="">
-              <img src="https://via.placeholder.com/707x295" alt="Projeto em destaque">
+              <picture>
+                <source srcset="https://via.placeholder.com/1000x400" media="(min-width: 1000px)">
+                <source srcset="https://via.placeholder.com/707x295" media="(min-width: 800px)">
+                <img srcset="https://via.placeholder.com/500x295" alt="Projeto em destaque">
+              </picture>
             </a>
           </section>
           <!-- / banner -->
-
           <!-- featured work -->
           <section class="works">
             <h2 class="works-title">Featured Work</h2>
-            <!-- work row -->
-            <div class="works-row">
+            <!-- work list -->
+            <ul class="works-list">
               <!-- work box -->
-              <article class="works-box">
+              <li class="works-box">
                 <a class="works-box-link" href="#">
                     <figure>
-                      <img src="https://via.placeholder.com/220x147"  alt="Projeto Appify">
+                      <picture>
+                        <source srcset="https://via.placeholder.com/330x220" media="(min-width: 1000px)">
+                        <source srcset="https://via.placeholder.com/200x140" media="(min-width: 800px)">
+                        <img srcset="https://via.placeholder.com/220x147" alt="Projeto Appify">
+                      </picture>
                       <figcaption class="works-box-content">
                         <h3 class="works-box-title">Appify</h3>
                         Link do projeto
                       </figcaption>
                     </figure>
                   </a>
-              </article>
+              </li>
               <!-- work box -->
               <!-- work box -->
-              <article class="works-box">
+              <li class="works-box">
                 <a class="works-box-link" href="#">
                     <figure>
-                      <img src="https://via.placeholder.com/220x147"  alt="Projeto Appify">
+                        <picture>
+                          <source srcset="https://via.placeholder.com/330x220" media="(min-width: 1000px)">
+                          <source srcset="https://via.placeholder.com/200x140" media="(min-width: 800px)">
+                          <img srcset="https://via.placeholder.com/220x147" alt="Projeto Appify">
+                        </picture>
                       <figcaption class="works-box-content">
                         <h3 class="works-box-title">Appify</h3>
                         Link do projeto
                       </figcaption>
                     </figure>
                   </a>
-              </article>
+              </li>
               <!-- work box -->
               <!-- work box -->
-              <article class="works-box">
+              <li class="works-box">
                 <a class="works-box-link" href="#">
                   <figure>
-                    <img src="https://via.placeholder.com/220x147"  alt="Projeto Appify">
+                      <picture>
+                        <source srcset="https://via.placeholder.com/330x220" media="(min-width: 1000px)">
+                        <source srcset="https://via.placeholder.com/200x140" media="(min-width: 800px)">
+                        <img srcset="https://via.placeholder.com/220x147" alt="Projeto Appify">
+                      </picture>
                     <figcaption class="works-box-content">
                       <h3 class="works-box-title">Appify</h3>
                       Link do projeto
                     </figcaption>
                   </figure>
                 </a>
-              </article>
+              </li>
               <!-- work box -->
-            </div>
-            <!-- / work row -->
-
+            </ul>
+            <!-- / work list -->
           </section>
           <!-- / featured work -->
-
         </div>
         <!-- / container -->
     </main>
