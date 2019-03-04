@@ -7,8 +7,57 @@
 /* ==========================================================================
    Global selectors
    ========================================================================== */
-img {
-  width: 100%;
-  max-width: 100%;
 
-}
+   *, 
+   ::after, 
+   ::before {
+    box-sizing: border-box;
+   }
+
+   * {
+    margin: 0;
+    padding: 0;
+   }
+
+  :root {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.4rem;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    padding-right: 1.5rem;    
+    padding-left: 1.5rem;    
+  }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+  .header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 3.0rem;
+    padding-bottom: 3.0rem;
+    margin-bottom: 1.8rem;
+    border-bottom: solid .3rem #7d97ad;
+  }
+
+  .header-info {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .header-info-name {
+    font-weight: 300;
+  }
