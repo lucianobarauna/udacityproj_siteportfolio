@@ -37,6 +37,7 @@
   .container {
     padding-right: 1.5rem;    
     padding-left: 1.5rem;    
+    margin-bottom: 3.0rem;
   }
 
 /* ==========================================================================
@@ -60,6 +61,7 @@
 
   .header-info-name {
     font-weight: 300;
+    font-size: 3.8rem;
   }
 
 /* ==========================================================================
@@ -72,9 +74,35 @@
 /* ==========================================================================
    Works featured
    ========================================================================== */
- 
-   .works-title {
-     margin-bottom: 1.5rem;
-     font-weight: 500;
-     color: #7d97ad;
-   }
+  .works-title {
+    margin-bottom: 1.0rem;
+    font-weight: 500;
+    color: #7d97ad;
+  }
+
+  .works-box {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .works-box-content {
+    padding-top: 1.0rem;
+  }
+
+  .works-box-title {
+    margin-bottom: 1.0rem;
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
+
+  .works-box-link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #2d3c49;
+  }
+
+  .works-box-link:hover,
+  .works-box-link:active { 
+    color: #02b3e4;
+  }
