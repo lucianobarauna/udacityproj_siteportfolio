@@ -29,15 +29,25 @@
     font-size: 1.4rem;
   }
 
-  img {
+  img,
+  svg {
     width: 100%;
     max-width: 100%;
+  }
+
+  a {
+    transition-duration: .3s; 
+  }
+
+  a:hover {
+    transition-duration: .15s; 
   }
 
   .container {
     padding-right: 1.5rem;    
     padding-left: 1.5rem;    
     margin-bottom: 3.0rem;
+    width: 100%;
   }
 
 /* ==========================================================================
@@ -51,6 +61,10 @@
     padding-bottom: 3.0rem;
     margin-bottom: 1.8rem;
     border-bottom: solid .3rem #7d97ad;
+  }
+  
+  .header-logo {
+    width: 20%;
   }
 
   .header-info {
@@ -67,8 +81,13 @@
 /* ==========================================================================
    Banner
    ========================================================================== */
-  .banner{
+  .banner {
     margin-bottom: 3.2rem;
+    opacity: 1;
+  }
+  
+  .banner a:hover {
+    opacity: .5;
   }
 
 /* ==========================================================================
@@ -78,6 +97,10 @@
     margin-bottom: 1.0rem;
     font-weight: 500;
     color: #7d97ad;
+  }
+
+  .works-row .works-box:first-child {
+    padding-top: 0;
   }
 
   .works-box {
@@ -97,12 +120,74 @@
   }
 
   .works-box-link {
+    display: block;
     font-size: 1.8rem;
     text-decoration: none;
     color: #2d3c49;
+    opacity: 1;
   }
 
   .works-box-link:hover,
   .works-box-link:active { 
+    opacity: .7;
     color: #02b3e4;
   }
+
+/* ==========================================================================
+  Media querys
+  ========================================================================== */
+
+
+  @media screen and (min-width: 576px) {
+    .container {
+      max-width: 520px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+   
+  }
+  @media (min-width: 768px) {  
+    .container {
+      max-width: 720px;
+    }
+
+    .header {
+      flex-flow: row;
+    }
+
+    .header-logo {
+      width: 60px;
+    }
+
+    .header-info {
+      flex: auto;
+      margin-top: 0;
+      text-align: right;
+      font-size: 1.6rem;
+    }
+
+    .works-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .works-box {
+      padding-top: 0;
+      width: 30%;
+    }
+  }
+
+
+  @media (min-width: 992px) { 
+    .container {
+      max-width: 960px;
+    }
+
+  }
+
+
+  @media (min-width: 1200px) { 
+    .container {
+      max-width: 1140px;
+    }
+   }
